@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica','Helvetica Neue',  'Arial', 'sans-serif';
+}
+body {
+    background: #D8DEE8;
+    margin: 0;
+    padding: 0;
+}
+.bg-black-color {
+    background-color: #252525;
+}
+.navbar-heading {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+}
+.data-section {
+    background: #D8DEE8;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.extra-rounded {
+    background: #D8DEE8;
+    box-shadow: -5px 5px 10px rgba(194, 200, 209, 0.2), 5px -5px 10px rgba(194, 200, 209, 0.2), -5px -5px 10px rgba(238, 244, 255, 0.9), 5px 5px 13px rgba(194, 200, 209, 0.9), inset 1px 1px 2px rgba(238, 244, 255, 0.3), inset -1px -1px 2px rgba(194, 200, 209, 0.5);
+    border-radius: 20px;
+    border: none;
+}
+.card-heading {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.vehicle-input {
+    /* width: 266px; */
+    height: 61px;
+    background: #D8DEE8;
+    box-shadow: 1px 1px 2px rgba(251, 255, 255, 0.3), -1px -1px 2px rgba(181, 186, 195, 0.5), inset -1px 1px 2px rgba(181, 186, 195, 0.2), inset 1px -1px 2px rgba(181, 186, 195, 0.2), inset -1px -1px 2px rgba(251, 255, 255, 0.9), inset 1px 1px 3px rgba(181, 186, 195, 0.9);
+    border-radius: 18px;
+    border: none;
+}
+.vehicle-input::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 23px;
+/* identical to box height */
+    color: #3F3F3F;
+}
+.calculate-button {
+    background: #252525;
+    box-shadow: 1px 1px 2px rgba(44, 44, 44, 0.3), -1px -1px 2px rgba(30, 30, 30, 0.5), inset -8px 8px 16px rgba(30, 30, 30, 0.2), inset 8px -8px 16px rgba(30, 30, 30, 0.2), inset -8px -8px 16px rgba(44, 44, 44, 0.9), inset 8px 8px 20px rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+}
