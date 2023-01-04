@@ -31,17 +31,31 @@ body {
     font-weight: 700;
 }
 .vehicle-input {
-    /* width: 266px; */
     height: 61px;
     background: #D8DEE8;
     box-shadow: 1px 1px 2px rgba(251, 255, 255, 0.3), -1px -1px 2px rgba(181, 186, 195, 0.5), inset -1px 1px 2px rgba(181, 186, 195, 0.2), inset 1px -1px 2px rgba(181, 186, 195, 0.2), inset -1px -1px 2px rgba(251, 255, 255, 0.9), inset 1px 1px 3px rgba(181, 186, 195, 0.9);
     border-radius: 18px;
     border: none;
 }
+.vehicle-input:focus {
+    border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(33, 35, 37, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+
+}
 .vehicle-input::placeholder {
     font-style: normal;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.2em;
+    line-height: 23px;
+/* identical to box height */
+    color: #3F3F3F;
+}
+#fuel-type {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
     line-height: 23px;
 /* identical to box height */
     color: #3F3F3F;
@@ -50,4 +64,21 @@ body {
     background: #252525;
     box-shadow: 1px 1px 2px rgba(44, 44, 44, 0.3), -1px -1px 2px rgba(30, 30, 30, 0.5), inset -8px 8px 16px rgba(30, 30, 30, 0.2), inset 8px -8px 16px rgba(30, 30, 30, 0.2), inset -8px -8px 16px rgba(44, 44, 44, 0.9), inset 8px 8px 20px rgba(30, 30, 30, 0.9);
     border-radius: 15px;
+}
+.widi {
+    min-width: 350px;
+}
+select {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid #333;
+    font-family: inherit;
+    /** for the dropdown indicator */
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
 }
