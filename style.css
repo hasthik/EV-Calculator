@@ -21,9 +21,10 @@ body {
     margin-bottom: 20px;
 }
 .extra-rounded {
+    padding: 10px 0;
     background: #D8DEE8;
     box-shadow: -5px 5px 10px rgba(194, 200, 209, 0.2), 5px -5px 10px rgba(194, 200, 209, 0.2), -5px -5px 10px rgba(238, 244, 255, 0.9), 5px 5px 13px rgba(194, 200, 209, 0.9), inset 1px 1px 2px rgba(238, 244, 255, 0.3), inset -1px -1px 2px rgba(194, 200, 209, 0.5);
-    border-radius: 20px;
+    border-radius: 35px;
     border: none;
 }
 .card-heading {
@@ -51,12 +52,23 @@ body {
     line-height: 23px;
 /* identical to box height */
     color: #3F3F3F;
+    background: fixed;
 }
-#fuel-type {
+input[type="number"], input[type="text"] , select   {
     font-style: normal;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 23px;
+/* identical to box height */
+    color: #3F3F3F;
+    background: fixed;
+}
+
+#fuel-type , #state , #vehicle-type ,#journey-frequency{
+    font-style: normal ;
+    font-weight: 300 ;
+    font-size: 1.2em ;
+    line-height: 23px ;
 /* identical to box height */
     color: #3F3F3F;
 }
@@ -81,4 +93,40 @@ select {
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 1em;
+}
+.hovering-content {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* bottom: 0px; */
+    /* left: 0px; */
+    background: #D8DEE8;
+    box-shadow: 1px 1px 2px rgba(251, 255, 255, 0.3), -1px -1px 2px rgba(181, 186, 195, 0.5), inset -1px 1px 2px rgba(181, 186, 195, 0.2), inset 1px -1px 2px rgba(181, 186, 195, 0.2), inset -1px -1px 2px rgba(251, 255, 255, 0.9), inset 1px 1px 3px rgba(181, 186, 195, 0.9);
+    /* height: 61px; */
+    border-radius: 3px;
+    border: none;
+}
+.on-selected {
+    display: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 23px;
+/* identical to box height */
+    color: #3F3F3F;
+    background-color: #D8DEE8;
+}
+.vehicle-input:focus + .on-selected {
+    display: block;
+}
+.big-font {
+    font-size: 4.5vh;
+    font-weight: 300;
+}
+.small-font {
+    font-size: 1.5vh;
+    font-weight: 300;
+}
+#results {
+    display: none;
 }

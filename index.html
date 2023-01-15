@@ -11,7 +11,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- bootstrap header files-->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>EV Petrol Calculator</title>
 </head>
 <body>
@@ -24,14 +23,30 @@
             <div class="col-sm-3 m-3 widi">
                 <div class="card extra-rounded">
                     <div class="card-body text-center">
-                        <h4 class="card-title card-heading">Electric Specs</h4>
+                        <h4 class="card-title card-heading">Electric Vehicle</h4>
                         <!-- input text -->
                         <div class="form-group m-3">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="on-road-price-electric" placeholder=" On Road Price">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="battery" placeholder=" Battery">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="range" placeholder=" Range">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="charging-cost" placeholder=" Charging Cost">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="cost-per-km-electric" placeholder=" Cost per Km">
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-2 " id="on-road-price-electric" placeholder="On Road Price">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="on-road-price-electric" for="on-road-price-electric">Rs</label>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-2 " id="battery" placeholder="Battery">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="battery" for="battery" >KWh</label>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-2 " id="range" placeholder="Range">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1"  id="range" for="range">Km</label>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-2 " id="charging-cost" placeholder="Charging Cost">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="charging-cost" for="charging-cost" >Rs/KWh</label>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-2 " id="cost-per-km-electric" placeholder="Cost per Km">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1"  id="cost-per-km-electric"  for="cost-per-km-electric">Rs</label>
+                            </div>
+                            
                         </div>
 
                     </div>
@@ -40,19 +55,33 @@
             <div class="col-sm-3 m-3 widi">
                 <div class="card extra-rounded">
                     <div class="card-body text-center">
-                        <h4 class="card-title card-heading">Petrol Specs</h4>
+                        <h4 class="card-title card-heading">Convenient Vehicle</h4>
                         <!-- input text -->
                         <div class="form-group m-3">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="on-road-price-petrol" placeholder=" On Road Price">
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-3 " id="on-road-price-petrol" placeholder="On Road Price">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="on-road-price-petrol" for="on-road-price-petrol">Rs</label>
+                            </div>
                             <!-- dropdown -->
-                            <select class="form-control mt-4 mb-4 vehicle-input" id="fuel-type">
-                                <option value="" disabled selected>Fuel Type</option>
-                                <option value="petrol">Petrol</option>
-                                <option value="diesel">Diesel</option>
-                            </select>
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="mileage" placeholder=" Mileage">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="fuel-cost" placeholder=" Fuel Cost">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="cost-per-km-petrol" placeholder=" Cost per Km">
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <select class="form-control vehicle-input pl-3 pr-3" id="fuel-type">
+                                    <option value="" disabled selected>Fuel Type</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                </select>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-3 " id="mileage" placeholder="Mileage">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="mileage" for="mileage">Km/L</label>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-3 " id="fuel-cost" placeholder="Fuel Cost">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1"id="fuel-cost"  for="fuel-cost">Rs/L</label>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-3 " id="cost-per-km-petrol" placeholder="Cost per Km">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1"id="cost-per-km-petrol" for="cost-per-km-petrol">Rs/Km</label>
+                            </div>
                         </div>
 
                     </div>
@@ -64,11 +93,78 @@
                         <h4 class="card-title card-heading">Vehicle Usage</h4>
                         <!-- input text -->
                         <div class="form-group m-3">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="vehicle-usage" placeholder=" Journey Distance">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="vehicle-usage" placeholder=" Journey Distance">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="vehicle-usage" placeholder=" Journey Distance">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="vehicle-usage" placeholder=" Journey Distance">
-                            <input type="text" class="form-control mt-4 mb-4 vehicle-input " id="vehicle-usage" placeholder=" Journey Distance">
+                            <div class="d-flex mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-3 " id="journey-distance" placeholder="Journey Distance">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="journey-distance" for="journey-distance">Km</label>
+                            </div>
+                            <div class="d-flex mt-4 mb-4 ">
+                                <select class="form-control vehicle-input pl-3 pr-3"  id="journey-frequency">
+                                    <option value="" disabled selected>Journey Frequency</option>
+                                    <option value="365">Daily</option>
+                                    <option value="54">Weekly</option>
+                                    <option value="12">Monthly</option>
+                                    <option value="1">Yearly</option>
+                                </select>
+                            </div>
+                            <!-- <div class="d-flex  mt-4 mb-4 ">
+                                <select class="form-control vehicle-input pl-3 pr-3" id="vehicle-type">
+                                    <option value="" disabled selected>Vehicle Type</option>
+                                    <option value="two-wheeler">Two-Wheeler</option>
+                                    <option value="four-wheeler">Four-Wheeler</option>
+                                </select>
+                            </div> -->
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <select class="form-control vehicle-input pl-3 pr-3" id="state">
+                                    <option value="" disabled selected>State</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                </select>                            
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <select class="form-control vehicle-input pl-3 pr-3" id="vehicle-type">
+                                    <option value="" disabled selected>Vehicle Type</option>
+                                    <option value="two-wheeler">Two-Wheeler</option>
+                                    <option value="four-wheeler">Four-Wheeler</option>
+                                </select>
+                            </div>
+                            <div class="d-flex  mt-4 mb-4 ">
+                                <input type="number" min="0" class="form-control vehicle-input pl-3 pr-3 " id="annual-journey-distance" placeholder="Annual Journey Distance">
+                                <label class="vehicle-input on-selected bg-white m-0 p-3 ml-1" id="annual-journey-distance" for="annual-journey-distance">Km/Year</label>
+                            </div>
                         </div>
 
                     </div>
@@ -78,9 +174,101 @@
     <!-- button -->
     <div class="row justify-content-center pt-3 bt-3">
         <div class="col-sm-10 col-4 ml-2 mr-2">
-            <button type="button" class="btn btn-dark btn-block mt-4 mb-4 p-3 calculate-button">Calculate</button>
+            <a href="#results" type="button" class="btn btn-dark btn-block p-3 calculate-button mb-5" onclick="runResults()" id="calculate">Calculate</a>
+        </div>
+    </div>
+    <!-- result -->
+    <div id="results" class="w-100 results extra-rounded mt-5">
+        <div class="row justify-content-between m-5">
+            <div class="col-sm-3 m-3 ">
+                <div class="card extra-rounded">
+                    <div class="card-body text-center d-flex justify-content-center align-items-center p-3">
+                        <div class="big-font" id="daily-savings">
+                            
+                        </div>
+                        <div class="small-font">
+                            Rs
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        Daily Savings
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3 ">
+                <div class="card extra-rounded">
+                    <div class="card-body text-center d-flex justify-content-center align-items-center p-3">
+                        <div class="big-font" id="monthly-savings">
+                        
+                        </div>
+                        <div class="small-font">
+                            Rs
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        Montly Savings
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-3 ">
+                <div class="card extra-rounded">
+                    <div class="card-body text-center d-flex justify-content-center align-items-center p-3">
+                        <div class="big-font" id="annual-savings">
+                        
+                        </div>
+                        <div class="small-font">
+                            Rs
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        Annual Savings
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between m-5">
+            <div class="col-sm-6 m-3 ">
+                <div class="card extra-rounded">
+                    <div class="card-body text-center d-flex justify-content-center align-items-center p-3">
+                        <div class="big-font" id="break-even-years">
+                            
+                        </div>
+
+                        <div class="small-font">
+                            Years
+                        </div>
+                        <div class="big-font" id="break-even-months">
+                            
+                        </div>
+
+                        <div class="small-font">
+                            Months
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        Time to Break Even                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 m-3 ">
+                <div class="card extra-rounded">
+                    <div class="card-body text-center d-flex justify-content-center align-items-center p-3">
+                        <div class="big-font" id="net-profit">
+                            
+                        </div>
+
+                        <div class="small-font">
+                            Rs
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        Net Profit after 5 years
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
